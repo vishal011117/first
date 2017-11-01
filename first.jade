@@ -11,11 +11,9 @@ html(lang='en')
 
     body
         h1 Jade - node template engine
-        div
-            p.myclass#myid
-                - var x = 5;
-                div
-                ul
+        - var x = 5;
+        div.myclass#myid
+            ul
                 - for (var i=1; i<=x; i++) {
                 li Hello
                 - }
