@@ -1,5 +1,5 @@
 doctype html
-html(lang='en' style='color:red')
+html(lang='en')
     head
         title Jade
         script(type='text/javascript').
@@ -8,14 +8,14 @@ html(lang='en' style='color:red')
             if (foo) {
                 bar(1 + 5)
             }
+
     body
         h1 Jade - node template engine
-        #container.col
-            p You are amazing
-            p
-                | Jade is a terse and simple
-                | templating language with a
-                | strong focus on performance
-                | and powerful features.
-                span(style="color:brown") Entering new lines
-                div.myClass Checking adding new lines
+        div
+            p.myclass#myid
+                - var x = 5;
+                div
+                ul
+                - for (var i=1; i<=x; i++) {
+                li Hello
+                - }
